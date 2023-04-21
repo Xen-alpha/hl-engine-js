@@ -1,4 +1,4 @@
-import {init, start, fullscreen} from './lib/hl-engine.js';
+import {init, start, fullscreen} from 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js@main/lib/hl-engine.js';
 
 document.getElementById('start').onclick = () => {
   const reader = new FileReader();
