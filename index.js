@@ -15,7 +15,7 @@ document.getElementById('start').onclick = () => {
   reader.readAsArrayBuffer(document.getElementById('zip').files[0]);
 }
 
-document.getElementById('xash-fullscreen').onclick = fullscreen
+document.getElementById('xash-fullscreen').onclick = fullscreen;
 
 function setStatus(text) {
   document.getElementById('xash-status').innerHTML = text;
