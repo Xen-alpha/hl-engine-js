@@ -23,6 +23,6 @@ function setStatus(text) {
 
 init({
   canvas: document.getElementById('xash-canvas'),
-  location: 'lib',
+  location: 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js/lib',
   setStatus: setStatus,
 });
