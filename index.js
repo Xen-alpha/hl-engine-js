@@ -1,4 +1,4 @@
-import {init, start, fullscreen} from 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js/lib/hl-engine.js';
+import {init, start, fullscreen} from 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js@main/lib/hl-engine.js';
 
 document.getElementById('start').onclick = () => {
   const reader = new FileReader();
@@ -23,6 +23,6 @@ function setStatus(text) {
 
 init({
   canvas: document.getElementById('xash-canvas'),
-  location: 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js/lib',
+  location: 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js@main/lib',
   setStatus: setStatus,
 });
