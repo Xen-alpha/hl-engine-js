@@ -1,5 +1,8 @@
 import {init, start, fullscreen} from 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js@main/lib/hl-engine.js';
 
+var xashgamename = "valve"
+var xashfullscreen = false;
+
 document.getElementById('start').onclick = () => {
   const reader = new FileReader();
   reader.onload = function(){
@@ -7,8 +10,18 @@ document.getElementById('start').onclick = () => {
       mod: document.getElementById('mod').value,
       map: document.getElementById('map').value,
       filesystem: "RAM",
-      fullscreen: true,
+      fullscreen: xashfullscreen,
       zip: reader.result,
+      args: [[
+        `-height`,
+        `${window.innerHeight}`,
+        `-width`,
+        `${window.innerWidth}`,
+        `+hud_scale`,
+        `2.5`,
+        "+volume",
+        "0.5",
+      ], ],
     };
     start(params);
   }
