@@ -12,7 +12,7 @@ document.getElementById('start').onclick = () => {
       filesystem: "RAM",
       fullscreen: xashfullscreen,
       zip: reader.result,
-      args: [[
+      args: [
         `-height`,
         `${window.innerHeight}`,
         `-width`,
@@ -21,7 +21,7 @@ document.getElementById('start').onclick = () => {
         `2.5`,
         "+volume",
         "0.5",
-      ], ],
+      ],
     };
     start(params);
   }
