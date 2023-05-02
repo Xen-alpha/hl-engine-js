@@ -13,12 +13,6 @@ document.getElementById('start').onclick = () => {
       fullscreen: xashfullscreen,
       zip: reader.result,
       args: [
-        `-height`,
-        `${window.innerHeight}`,
-        `-width`,
-        `${window.innerWidth}`,
-        `+hud_scale`,
-        `2.5`,
         "+volume",
         "0.5",
       ],
