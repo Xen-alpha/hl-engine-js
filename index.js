@@ -36,6 +36,6 @@ function setStatus(text) {
 
 init({
   canvas: document.getElementById('xash-canvas'),
-  location: "https://libertyga.me/wiki/"+xashgamename,
+  location: "https://libertyga.me/index.php?action=raw&title="+xashgamename,
   setStatus: setStatus,
 });
