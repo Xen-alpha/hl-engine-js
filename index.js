@@ -35,6 +35,6 @@ function setStatus(text) {
 
 init({
   canvas: document.getElementById('xash-canvas'),
-  location: 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js@main/lib',
+  location: "https://libertyga.me/wiki/"+uri.query["gamename"],
   setStatus: setStatus,
 });
