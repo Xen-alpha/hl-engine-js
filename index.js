@@ -1,6 +1,6 @@
 import {init, start, fullscreen} from 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js@main/lib/hl-engine.js';
 
-var xashgamename = document.getElementById("xash3d-lg-gamename");
+var xashgamename = document.getElementById("xash3d-lg-gamename").innerText;
 // var xashfullscreen = false;
 
 document.getElementById('start').onclick = () => {
