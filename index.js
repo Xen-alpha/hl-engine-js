@@ -19,6 +19,8 @@ document.getElementById('start').onclick = () => {
       ],
     };
     document.getElementById("start").style.display = "none";
+    document.getElementById("zip").style.display = "none";
+    document.getElementById("xash-filedescription").style.display = "none";
     start(params);
   }
   reader.readAsArrayBuffer(document.getElementById('zip').files[0]);
