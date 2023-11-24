@@ -1,7 +1,6 @@
 import {init, start, fullscreen} from 'https://cdn.jsdelivr.net/gh/Xen-alpha/hl-engine-js@main/lib/hl-engine.js';
 
-var uri = new mw.Uri(document.URL);
-var xashgamename = uri.query["gamename"];
+var xashgamename = document.getElementById("xash3d-lg-gamename");
 // var xashfullscreen = false;
 
 document.getElementById('start').onclick = () => {
@@ -37,6 +36,6 @@ function setStatus(text) {
 
 init({
   canvas: document.getElementById('xash-canvas'),
-  location: "https://libertyga.me/wiki/"+uri.query["gamename"],
+  location: "https://libertyga.me/wiki/"+xashgamename,
   setStatus: setStatus,
 });
